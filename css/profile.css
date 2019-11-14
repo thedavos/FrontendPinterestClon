@@ -147,6 +147,7 @@
   
   .profile__details {
     align-self: start;
+    text-align: center;
   }
   
   .profile__image {
