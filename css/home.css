@@ -13,6 +13,7 @@
   text-align: center;
   position: relative;
   cursor: pointer;
+  justify-self: center;
 }
 
 .header__link:hover .header__link__wrapper {
@@ -53,6 +54,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .search i {
@@ -99,6 +101,7 @@
   font-size: .7rem;
   top: 0;
   right: 0;
+  z-index: 10;
 }
 
 .header__link.following i {
@@ -266,7 +269,7 @@
 
 @media screen and (max-width: 1080px) {
   .header {
-    grid-template-columns: 40px 1fr 40px 40px 10px repeat(3, 40px);
+    grid-template-columns: 10% 1fr repeat(2, 10%) 1% repeat(3, 10%);
   }
 
   .header__link__wrapper {
@@ -296,6 +299,11 @@
 }
 
 @media screen and (max-width: 500px)  {
+  .header {
+    grid-column-gap: 8px;
+    padding: 0 .5rem;
+  }
+  
   .container {
     padding: 2em .5em;
   }
