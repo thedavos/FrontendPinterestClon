@@ -1,0 +1,29 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 15px;
+}
+
+.cards__item {
+  border-radius: 12px;
+}
+
+.cards__item--big {
+  grid-row-end: span 3;
+}
+
+.cards__item--medium {
+  grid-row-end: span 2;
+}
+
+.cards__item--short {
+  grid-row-end: span 1;
+}
+
+img {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}

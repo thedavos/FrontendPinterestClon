@@ -1,0 +1,133 @@
+.profile__actions {
+  color: var(--darker-gray);
+  font-size: 24px;
+  display: flex;
+}
+
+.hero__profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "actions actions" "details user";
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.profile__actions {
+  grid-area: actions;
+}
+
+.profile__action--wrapper {
+  width: 48px;
+  height: 48px;
+  background: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.profile__action--wrapper:hover {
+  background: var(--soft-gray);
+}
+
+.profile__details {
+  grid-area: details;
+}
+
+.profile__details h1 {
+  color: var(--black-text);
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.profile__sub__details span,
+.profile__sub__details a {
+  color: var(--black-text);
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+.profile__image {
+  grid-area: user;
+  justify-self: end;
+}
+
+.profile__image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.toolbar__sort {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.toolbar--wrapper {
+  height: 48px;
+  background: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 12px;
+  width: auto;
+  padding: 0 .7rem;
+  border-radius: 999px;
+  color: var(--black-text);
+  font-weight: bold;
+}
+
+.toolbar--wrapper:active {
+  box-shadow: 0 0 0 4px rgba(0,132,255,.5);
+}
+
+.--wrapper-active {
+  background: var(--soft-gray);
+}
+
+.toolbar--wrapper:hover {
+  background: var(--soft-gray);
+}
+
+.hero__tables {
+  margin-top: 3rem;
+}
+
+.tables {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  grid-gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.table .cards__item:nth-of-type(odd)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: var(--soft-gray);
+  border-radius: 8px;
+}
+
+.table,
+.cards__item {
+  cursor: pointer;
+}
+
+.table.cards {
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 8px;
+  justify-self: center;
+  align-self: center;
+}
