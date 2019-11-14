@@ -28,7 +28,6 @@
   width: 440px;
   margin: 0 .5rem;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
-  max-height: 95%;
 }
 
 .modal__footer {
@@ -121,4 +120,10 @@
   bottom: 0;
   display: block;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 350px)  {
+  .modal {
+    max-height: 95%;
+  }
 }
